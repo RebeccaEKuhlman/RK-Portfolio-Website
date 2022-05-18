@@ -1,4 +1,5 @@
 import {IconBreadcrumbs} from "./IconBreadcrumbs"
+import {BottomNav} from "./BottomNav"
 export const homePage = () => { 
     
     return <div>
@@ -14,5 +15,6 @@ export const homePage = () => {
         <p>Skills: </p>
         {/** TODO: Project highlights, lots of links*/}
         {/** TODO: Fancy Info bottom container*/}
+        <BottomNav value={0} />
     </div>
 };

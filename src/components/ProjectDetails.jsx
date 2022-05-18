@@ -1,5 +1,6 @@
-
-
+/**
+ * Full project description
+ */
 export const ProjectDetails = () =>
 { 
     const [project, setProject] = useState(undefined);

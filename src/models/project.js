@@ -1,5 +1,5 @@
 /**
- * 
+ * Project object to store data for a project
  */
 export class Project{
     constructor(name, imgSrc, date, description, miniDes){

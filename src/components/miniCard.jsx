@@ -1,3 +1,6 @@
+/**
+ * project highlights
+ */
 export const MiniCard = (imageLink) =>{
     
     return <div>
