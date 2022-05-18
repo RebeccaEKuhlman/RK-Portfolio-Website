@@ -4,8 +4,11 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import HomeIcon from '@mui/icons-material/Home';
 import CollectionsIcon from '@mui/icons-material/Collections';
 import CodeIcon from '@mui/icons-material/Code';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
+import ArticleIcon from '@mui/icons-material/Article';
+import {SwipeableTemporaryDrawer} from './Contact'
 
 const scrollToTop = () =>{
     window.scrollTo({
@@ -24,17 +27,20 @@ const scrollToBot = () => {
 export const BottomNav = () => {
     
     const [value, setValue] = React.useState(0);
-  return  <div>
+  return  <div>{}
+    <SwipeableTemporaryDrawer/>
     <BottomNavigation
         showLabels
         value={value}
         onChange={(event, newValue) => {
             setValue(newValue);
         }}>  
-    <BottomNavigationAction label="Up" icon={<ArrowUpwardIcon />} onClick={() => {scrollToTop()}}/> 
+    <BottomNavigationAction label="Up" icon={<KeyboardArrowUpIcon/>} onClick={() => {scrollToTop()}}/> 
     <BottomNavigationAction label="Home" icon={<HomeIcon />} />
     <BottomNavigationAction label="Gallery" icon={<CollectionsIcon />} />
     <BottomNavigationAction label="Projects" icon={<CodeIcon />} />
+    <BottomNavigationAction label="Blog" icon={<ArticleIcon />} />
+    <BottomNavigationAction label="Contact" icon={<ContactPageIcon />} onClick={() => {}}/>
     <BottomNavigationAction label="Down" icon={<KeyboardArrowDownIcon />} onClick={() => {scrollToBot()}}/> 
     </BottomNavigation>
 </div>

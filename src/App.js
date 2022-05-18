@@ -1,7 +1,8 @@
-import {homePage} from "./components/homePage"
+import {HomePage} from "./components/homePage"
+
 function App() {
   
-  return homePage
+  return <HomePage />
   
 }
 

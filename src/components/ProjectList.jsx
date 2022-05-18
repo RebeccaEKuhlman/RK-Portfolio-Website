@@ -1,4 +1,5 @@
 import { ProjectDetails } from "./ProjectDetails";
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export const homePage = () => { 
     const [projects, setProjects] = useState(undefined);
@@ -6,6 +7,7 @@ export const homePage = () => {
      * Add search bar, bar to keep track of where the user is in the page with scroll links
      */
     return <div>
+        <GitHubIcon /> <></>
         <Autocomplete
             disablePortal
             id="combo-box-demo"
