@@ -7,7 +7,7 @@ export const homePage = () => {
         {/** TODO: Contact Info top in buttons: github, resume
          * https://www.linkedin.com/in/rebecca-kuhlman-8bab731a0/
          * https://github.com/RebeccaEKuhlman
-         * 
+         * DIG website?
         */}
         <IconBreadcrumbs />
         {/** TODO: Cute artist BQ, highlighted skills*/}

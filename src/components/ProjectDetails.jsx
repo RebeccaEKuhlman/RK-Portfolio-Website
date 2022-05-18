@@ -6,11 +6,15 @@ export const ProjectDetails = () =>
     const [project, setProject] = useState(undefined);
     const mergeProject = delta => setProject({ ...project, ...delta });
 
-    return <div>
-        <img src="" alt=""></img>
-        <h3>{project.name}</h3>
-        <button>See Details</button>
+    /**
+     * <button>See Details</button>
             <p>project details</p>
-        
+     */
+    return <div>
+         <img src={project.imgSrc} alt="Photo of the project"/>
+        <div>{project.name}{/**div for dividing half on other side of image*/}
+        {project.date}
+        <p>{project.description}</p>
+        </div>
     </div>
 }
