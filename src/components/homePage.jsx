@@ -5,11 +5,7 @@ export const HomePage = () => {
     
     return <div>
         
-        {/** TODO: Contact Info top in buttons: github, resume
-         * https://www.linkedin.com/in/rebecca-kuhlman-8bab731a0/
-         * import LinkedInIcon from '@mui/icons-material/LinkedIn';
-         * https://github.com/RebeccaEKuhlman
-         * DIG website?
+        {/** button resume
         */}
         <TopNav />
         {/** TODO: Cute artist BQ, highlighted skills*/}
