@@ -27,21 +27,22 @@ const scrollToBot = () => {
 export const BottomNav = () => {
     
     const [value, setValue] = React.useState(0);
+    var anchor = 'left'
   return  <div>{}
-    <SwipeableTemporaryDrawer/>
     <BottomNavigation
-        showLabels
+        showLabel={false}
         value={value}
         onChange={(event, newValue) => {
             setValue(newValue);
         }}>  
-    <BottomNavigationAction label="Up" icon={<KeyboardArrowUpIcon/>} onClick={() => {scrollToTop()}}/> 
+    <BottomNavigationAction showLabel={false} label="Up" icon={<KeyboardArrowUpIcon/>} onClick={() => {scrollToTop()}}/> 
     <BottomNavigationAction label="Home" icon={<HomeIcon />} />
     <BottomNavigationAction label="Gallery" icon={<CollectionsIcon />} />
     <BottomNavigationAction label="Projects" icon={<CodeIcon />} />
     <BottomNavigationAction label="Blog" icon={<ArticleIcon />} />
-    <BottomNavigationAction label="Contact" icon={<ContactPageIcon />} onClick={() => {}}/>
-    <BottomNavigationAction label="Down" icon={<KeyboardArrowDownIcon />} onClick={() => {scrollToBot()}}/> 
+    <SwipeableTemporaryDrawer label ="Contact" showLabel={false} icon={<ContactPageIcon />} class="MuiBottomNavigationAction" value={<ContactPageIcon />} />
+    {/**<BottomNavigationAction label="Contact" icon={<ContactPageIcon />} onClick={() => {}}/>*/}
+    <BottomNavigationAction showLabel={false} label="Down" icon={<KeyboardArrowDownIcon />} onClick={() => {scrollToBot()}}/> 
     </BottomNavigation>
 </div>
 }
