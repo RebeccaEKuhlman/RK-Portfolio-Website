@@ -1,8 +1,8 @@
-import {HomePage} from "./components/homePage"
+import {Router} from "./Router"
 
 function App() {
   
-  return <HomePage />
+  return <Router />
   
 }
 

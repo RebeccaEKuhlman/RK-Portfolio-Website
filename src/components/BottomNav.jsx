@@ -9,6 +9,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import ArticleIcon from '@mui/icons-material/Article';
 import {SwipeableTemporaryDrawer} from './Contact'
+import {useNavigate} from "react-router-dom";
 
 const scrollToTop = () =>{
     window.scrollTo({
@@ -27,7 +28,7 @@ const scrollToBot = () => {
 export const BottomNav = () => {
     
     const [value, setValue] = React.useState(0);
-    var anchor = 'left'
+    const navigate = useNavigate();
   return  <div>{}
     <BottomNavigation
         showLabel={false}
@@ -36,10 +37,10 @@ export const BottomNav = () => {
             setValue(newValue);
         }}>  
     <BottomNavigationAction showLabel={false} label="Up" icon={<KeyboardArrowUpIcon/>} onClick={() => {scrollToTop()}}/> 
-    <BottomNavigationAction label="Home" icon={<HomeIcon />} />
-    <BottomNavigationAction label="Gallery" icon={<CollectionsIcon />} />
-    <BottomNavigationAction label="Projects" icon={<CodeIcon />} />
-    <BottomNavigationAction label="Blog" icon={<ArticleIcon />} />
+    <BottomNavigationAction label="Home" icon={<HomeIcon />} onClick={()=> {navigate("/")}}/>
+    <BottomNavigationAction label="Gallery" icon={<CollectionsIcon />} onClick={()=> {navigate("/gallery")}}/>
+    <BottomNavigationAction label="Projects" icon={<CodeIcon />} onClick={()=> {navigate("/projects")}}/>
+    <BottomNavigationAction label="Blog" icon={<ArticleIcon />} onClick={()=> {navigate("/blog")}}/>
     <SwipeableTemporaryDrawer label ="Contact" showLabel={false} icon={<ContactPageIcon />} class="MuiBottomNavigationAction" value={<ContactPageIcon />} />
     {/**<BottomNavigationAction label="Contact" icon={<ContactPageIcon />} onClick={() => {}}/>*/}
     <BottomNavigationAction showLabel={false} label="Down" icon={<KeyboardArrowDownIcon />} onClick={() => {scrollToBot()}}/> 

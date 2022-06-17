@@ -1,7 +1,7 @@
 /**
  * Generalize more
  */
-export const carasel = () => { 
+export const Carasel = () => { 
     
     return <div>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
