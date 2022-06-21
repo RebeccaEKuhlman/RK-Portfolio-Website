@@ -10,14 +10,15 @@ import {useNavigate} from "react-router-dom";
 export const TopNav = () =>{
     const navigate = useNavigate();
     return <div>
-        <h3 class="navbar-brand">RebeccaKuhlman.com</h3>
+        <h3 class="navbar-brand mr-10">RebeccaKuhlman.com</h3>
+        <div class="row">
          <ButtonGroup variant="text" aria-label="text button group">
-            <Button onClick={()=> {navigate("/")}}><HomeIcon sx={{ mr: 0.5 }} fontSize="inherit" />Home</Button>
-            <Button onClick={()=> {navigate("/gallery")}}><CollectionsIcon sx={{ mr: 0.5 }} fontSize="inherit" />Gallery</Button>
-            <Button onClick={()=> {navigate("/projects")}}><CodeIcon sx={{ mr: 0.5 }} fontSize="inherit"/>Projects</Button>
-            <Button onClick={()=> {navigate("/blog")}}><ArticleIcon sx={{ mr: 0.5 }} fontSize="inherit" />Blog</Button>
-            <Button onClick={()=> window.open('https://github.com/RebeccaEKuhlman')}><GitHubIcon sx={{ mr: 0.5 }} fontSize="inherit" />Github</Button>
-            <Button onClick={()=> window.open('https://www.linkedin.com/in/rebecca-kuhlman-8bab731a0/')}><LinkedInIcon sx={{ mr: 0.5 }} fontSize="inherit" />LinkedIn</Button>
-        </ButtonGroup>
+            <div class="col-2"><Button onClick={()=> {navigate("/")}}><HomeIcon sx={{ mr: 0.5 }} fontSize="inherit" />Home</Button></div>
+            <div class="col-2"><Button onClick={()=> {navigate("/gallery")}}><CollectionsIcon sx={{ mr: 0.5 }} fontSize="inherit" />Gallery</Button></div>
+            <div class="col-2"><Button onClick={()=> {navigate("/projects")}}><CodeIcon sx={{ mr: 0.5 }} fontSize="inherit"/>Projects</Button></div>
+            <div class="col-2"><Button onClick={()=> {navigate("/blog")}}><ArticleIcon sx={{ mr: 0.5 }} fontSize="inherit" />Blog</Button></div>
+            <div class="col-2"><Button onClick={()=> window.open('https://github.com/RebeccaEKuhlman')}><GitHubIcon sx={{ mr: 0.5 }} fontSize="inherit" />Github</Button></div>
+            <div class="col-2"><Button onClick={()=> window.open('https://www.linkedin.com/in/rebecca-kuhlman-8bab731a0/')}><LinkedInIcon sx={{ mr: 0.5 }} fontSize="inherit" />LinkedIn</Button></div>
+        </ButtonGroup></div>
   </div>
 }

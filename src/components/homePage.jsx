@@ -16,6 +16,7 @@ export const HomePage = () => {
         {/** TODO: Project highlights, lots of links*/}
         {/**<MiniCard/>*/}
         {/** TODO: Fancy Info bottom container*/}
-        <BottomNav value={0} />
+        <span className="fixed-bottom"><BottomNav /></span>
+        
     </div>
 };
