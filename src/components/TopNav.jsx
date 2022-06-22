@@ -20,5 +20,6 @@ export const TopNav = () =>{
             <div class="col-2"><Button onClick={()=> window.open('https://github.com/RebeccaEKuhlman')}><GitHubIcon sx={{ mr: 0.5 }} fontSize="inherit" />Github</Button></div>
             <div class="col-2"><Button onClick={()=> window.open('https://www.linkedin.com/in/rebecca-kuhlman-8bab731a0/')}><LinkedInIcon sx={{ mr: 0.5 }} fontSize="inherit" />LinkedIn</Button></div>
         </ButtonGroup></div>
+
   </div>
 }
