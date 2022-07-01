@@ -10,7 +10,7 @@ import {useNavigate} from "react-router-dom";
 export const TopNav = () =>{
     const navigate = useNavigate();
     return <div>
-        <h3 class="navbar-brand mr-10">RebeccaKuhlman.com</h3>
+        <h3 class="navbar-brand mr-10">RebeccaKuhlman.com ~~~ innovatively imaginative</h3> 
         <div class="row">
          <ButtonGroup variant="text" aria-label="text button group">
             <div class="col-2"><Button onClick={()=> {navigate("/")}}><HomeIcon sx={{ mr: 0.5 }} fontSize="inherit" />Home</Button></div>

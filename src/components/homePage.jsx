@@ -12,7 +12,7 @@ export const HomePage = () => {
         <TopNav />
         {/** TODO: Cute artist BQ, highlighted skills*/}
         <div className="m-3 p-10">
-        <img src="../bqkLogo" alt="it me" class=""/>
+        <img  src={require('../bqkLogo.png')} alt="it me" class="w-25 h-30 rounded"/>
         <p>Skills: </p>
         {/** TODO: Project highlights, lots of links*/}
         {/**<MiniCard/>*/}
