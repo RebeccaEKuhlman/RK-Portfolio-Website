@@ -2,7 +2,6 @@
  * Edited bootstrap carousel component
  * Goals: 
  *  -Generalize more, make carousel itself a component
- *  - It to work ;-;
  * 
  */
  import {TopNav} from "./TopNav"

@@ -1,3 +1,8 @@
+/**
+ * This will be expanded post databases class
+ * For now, the base styling a couple projects will be displayed via hard code :<
+ */
+
 import { ProjectDetails } from "./ProjectDetails";
 import React from 'react';
 import { useState, useContext} from "react";
@@ -12,7 +17,7 @@ export const ProjectList = () => {
     /**
      * Add search bar, bar to keep track of where the user is in the page with scroll links
      */
-    return <div>
+    return <div className="m-3 p-10">
               <TopNav/>
                         {/**<Autocomplete
                             disablePortal
@@ -26,8 +31,8 @@ export const ProjectList = () => {
                     <li>
                         <ProjectDetails value={project}/>
                     </li>)*/}
-              <div class="card w-75 bg-light p-2 m-3">
-              <img src='../bqkLogo' class="card-img-top" alt="Photo of the project"/>
+              <div class="card w-75 bg-light p-2 m-3 mb-10">
+              <img src={require('../haunt2021_doll.png')} class="block w-25" alt="Photo of the project"/>
                 <div class="card-body">
                   <h5 class="card-title">DIG Haunted House</h5>
                   <h6 class="card-subtitle mb-2 text-muted">September-October 2021</h6>
@@ -35,7 +40,7 @@ export const ProjectList = () => {
                   </p>
                   <div className="collapsible">
                       <div className="header" {...getToggleProps()}>
-                          <button>{isExpanded ? 'Collapse' : 'Expand'}</button>
+                          <button className="btn btn-info btn-sm text-white">{isExpanded ? 'Collapse' : 'Expand'}</button>
                       </div>
                       <div {...getCollapseProps()}>
                           <div className="content">
