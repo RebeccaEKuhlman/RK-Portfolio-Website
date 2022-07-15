@@ -1,3 +1,9 @@
+/**
+ * Uses MUI components to make a bar that sticks to the bottom of a user's screen
+ * for easy navigation
+ * Goals: maybe color styling (finishing touch)
+ */
+
 import * as React from 'react';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';

@@ -1,3 +1,8 @@
+/**
+ * Uses MUI component to make a drawer for contact information,
+ * and uses MUI icons to style it
+ */
+
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';

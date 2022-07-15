@@ -1,3 +1,7 @@
+/**
+ * Router for all of the pages
+ */
+
 import React from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {HomePage} from "./components/homePage"

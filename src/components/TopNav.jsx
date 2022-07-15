@@ -1,3 +1,7 @@
+/**
+ * uses MUI components for the top nav bar 
+ */
+
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Button from '@mui/material/Button';
 import HomeIcon from '@mui/icons-material/Home';

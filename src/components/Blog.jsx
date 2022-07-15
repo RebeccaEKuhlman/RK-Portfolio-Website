@@ -1,3 +1,8 @@
+/**
+ * Blog using bootstrap components to format and style
+ * Goals: make prettier, maybe hide text button
+ */
+
 import {TopNav} from "./TopNav"
 import {BottomNav} from "./BottomNav"
 

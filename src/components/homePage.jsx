@@ -1,22 +1,27 @@
+/**
+ * Homepage for the website
+ * Goals: clean, clear page that displays skills and best works
+ *  - Find a way to display skills that isn't "too much" (maybe a long line with tiny text thats for decoration? )
+ *  - carousel with best projects
+ *  - mini project cards, links to big project page
+ */
+
 import {TopNav} from "./TopNav"
 import {BottomNav} from "./BottomNav"
 import Project from '../models/project'
 import {MiniCard} from './miniCard'
 
 export const HomePage = () => { 
-    //var a = Project("tester", "../../public/logo192", "4/20/6969", "cooooooool", "cool");
     return <div className="m-3 p-10">
         
         {/** button resume
         */}
         <TopNav />
-        {/** TODO: Cute artist BQ, highlighted skills*/}
         <div className="m-3 p-10">
         <img  src={require('../bqkLogo.png')} alt="it me" class="w-25 h-30 rounded"/>
-        <p>Skills: </p>
+        {/** <p>Skills: </p>*/} 
         {/** TODO: Project highlights, lots of links*/}
         {/**<MiniCard/>*/}
-        {/** TODO: Fancy Info bottom container*/}
         </div>
         <span className="fixed-bottom"><BottomNav /></span>
         
