@@ -23,16 +23,16 @@ export const Carousel = () => {
     <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
 
-  <div class="carousel-inner bg-black">
+  <div class="carousel-inner bg-secondary">
     <div class="carousel-item active">
-      <img class="d-block w-25 h-30" src={require('../bqkLogo.png')} alt="First slide"/>
+      <img class="d-block w-25 h-75 mx-auto" src={require('../bqkLogo.png')} alt="First slide"/>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-25 h-30" src={require('../silly_logo.png')} alt="Second slide"/>
+      <img class="d-block w-25 h-75 mx-auto" src={require('../silly_logo.png')} alt="Second slide"/>
     </div>
-    <div class="carousel-item">
-      <img class="d-block  w-25 h-30" src={require('../soulbound2.png')} alt="Third slide"/>
-    </div>
+    <div class="carousel-item text-center">
+      <img class="d-block w-25 h-75 mx-auto" src={require('../soulbound2.png')} alt="Third slide"/>
+      </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
