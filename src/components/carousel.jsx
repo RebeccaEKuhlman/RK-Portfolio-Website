@@ -1,10 +1,14 @@
 /**
- * Generalize more
+ * Edited bootstrap carousel component
+ * Goals: 
+ *  -Generalize more, make carousel itself a component
+ *  - It to work ;-;
+ * 
  */
  import {TopNav} from "./TopNav"
  import {BottomNav} from "./BottomNav"
 
-export const Carasel = () => { 
+export const Carousel = () => { 
     
     return <div >
         <TopNav />
