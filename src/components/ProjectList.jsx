@@ -32,7 +32,7 @@ export const ProjectList = () => {
                         <ProjectDetails value={project}/>
                     </li>)*/}
               <div class="card w-75 bg-light p-2 m-3 mb-10">
-              <img src={require('../haunt2021_doll.png')} class="block w-25" alt="Photo of the project"/>
+              <img src={require('../haunt2021_doll.png')} class="block w-25" alt="Crocheted voodoo doll"/>
                 <div class="card-body">
                   <h5 class="card-title">DIG Haunted House</h5>
                   <h6 class="card-subtitle mb-2 text-muted">September-October 2021</h6>
@@ -44,13 +44,14 @@ export const ProjectList = () => {
                       </div>
                       <div {...getCollapseProps()}>
                           <div className="content">
-                          I worked on a lot of the parts requiring the vinyl cutter, gaining a new appreciation of its potential as tool. Playing with the utilization of space, and drawing the audience to look at a certain places in the maze was very fun and informative!
+                          I worked on a lot of the parts requiring the vinyl cutter, gaining a new appreciation of its potential as tool. Playing with the utilization of space, and drawing the audience to look at a certain places in the maze was very fun and informative! The picture is a doll I crocheted, which turned out much creepier than I expected 0_0
                           </div>
                       </div>
                   </div>
                 </div>
               </div>
             </ul>
+            spacing
             <span className="fixed-bottom"><BottomNav /></span>
             </div>
 };
