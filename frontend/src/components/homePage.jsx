@@ -77,12 +77,8 @@ P.S. pardon the dust of this website - I'm experimenting with different styles a
             <div>
         {answer.length > 0 ? (
           <div>
-            <h2>Search Results:</h2>
-            <ul>
-              {answer.map((result, index) => (
-                <li key={index}>{result}</li> // update later
-              ))}
-            </ul>
+            <h3>Assistant:</h3>
+              <p>{answer}</p>
           </div>
         ) : null}
       </div>
