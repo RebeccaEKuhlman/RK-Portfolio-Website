@@ -8,28 +8,36 @@
 
 import {TopNav} from "./TopNav"
 import {BottomNav} from "./BottomNav"
-//import Project from '../models/project'
-//import {MiniCard} from './miniCard'
-import {QuestionBox} from './QuestionBox';
 import React, { useState } from 'react';
 
 export const HomePage = () => {
-    const [answer, setAnswer] = useState([]);
+    const [answer, setAnswer] = useState(''); // message history needs array
+    const [query, setQuery] = useState('');
 
 
-    const handleSearch = (query) => {
-
-    fetch('/search', {
+    const handleSearch = (event) => {
+        console.log("handleSearch " + query)
+        event.preventDefault();
+        //console.log(JSON.stringify(query))
+    fetch('http://localhost:5000/search', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ query }),
+        body: JSON.stringify({ query: query })
     })
     .then(response => response.json())
     .then(data => {
       console.log(data); // logging as well for now
-      setAnswer(data.results);
+      if (data) { // Adjust according to the actual structure
+        setAnswer(data);
+      } else {
+        // Handle cases where data is not in the expected format or results are missing
+        console.error('Unexpected response structure:', data);
+        setAnswer([]); // Set a default state or handle accordingly
+      }
+      console.log(answer)
+      setQuery("");
     })
     .catch(error => {
       console.error('Error:', error);
@@ -54,7 +62,17 @@ The journey may be demanding, but the impact of creating the future is a worthy 
 P.S. pardon the dust of this website - I'm experimenting with different styles and components from bootstrap and MUI, as well as gpt integration.
 </p>
     <div className="m-3 p-10">
-      <QuestionBox onSearch={handleSearch} />
+        <form onSubmit={handleSearch}>
+      <input
+        type="text"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        placeholder="Ask about Rebecca..."
+        className="form-control"
+      />
+    <br />
+      <button type="submit" className="btn btn-primary">Search</button>
+    </form>
     </div>
             <div>
         {answer.length > 0 ? (

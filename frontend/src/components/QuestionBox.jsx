@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 // edited from generated template
+//<QuestionBox onSearch={handleSearch} />
 
 export const QuestionBox = ({ onSearch }) => {
   const [query, setQuery] = useState('');

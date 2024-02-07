@@ -15,9 +15,9 @@ def hello():
 
 @app.route('/search', methods=['POST'])
 def search():
-    print("in search")
     data = request.json
     query = data['query']
+    print(data)
     completion = client.chat.completions.create(
         model="gpt-4",
         messages=[
@@ -28,7 +28,8 @@ def search():
    # result = {'message': f'Search results for "{query}"'}
     result = completion.choices[0].message
     print(result)
-    return jsonify(result)
+    print(result.content)
+    return jsonify(result.content)
 
 if __name__ == '__main__':
     app.run(debug=True)
