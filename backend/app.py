@@ -8,6 +8,34 @@ cors = CORS(app,  resources={r"*": {"origins": "*"}})
 
 client = OpenAI() # gets API key from .env file
 
+file = client.files.create(
+  file=open("Kuhlman_Resume2024.pdf", "qa_doc.pdf"),
+  purpose='assistants'
+)
+
+assistant = client.beta.assistants.create(
+    name="Stella",
+    instructions="GPT is Rebecca Kuhlman's personal advocate. GPT gives user information regarding Rebecca Kuhlman, regarding their interests, experience in Computer Science, and their stellar work ethic. Their pronouns are They/Them. Everything is business professional. Answer only questions about Rebecca's qualifications and career. If a user asks for code, to do math, or something irrelevant about the topic, politely decline the question.",
+    model="gpt-3-turbo-",
+    tools=[{"type": "retrieval"}],
+    file_ids=[file.id]
+)
+
+thread = client.beta.threads.create(
+  messages=[
+    {
+      "role": "user",
+      "content": "Create 3 data visualizations based on the trends in this file.",
+      "file_ids": [file.id]
+    }
+  ]
+)
+
+run = client.beta.threads.runs.create(
+  thread_id=thread.id,
+  assistant_id=assistant.id
+)
+
 @app.route('/')
 #@cross_origin(origin='*',headers=['Content-Type','Authorization'])
 def hello():
