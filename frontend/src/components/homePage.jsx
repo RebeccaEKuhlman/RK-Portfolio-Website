@@ -18,7 +18,7 @@ export const HomePage = () => {
         */}
         <TopNav />
         <div className="m-3 p-10">
-        <img  src={require('../bqkLogo.png')} alt="it me" class="w-25 h-30 rounded"/>
+        <img src={require('../bqkLogo.png')} alt="it me" class="w-25 h-30 rounded"/>
         <p>Hi my name is Rebecca Kuhlman and I'm a computer science student and jack-of-a-lot-of-trades!<br />
 I'm always working on 10 projects at a time ;-; but I do get them done!<br />
 I code, crochet, CAD, draw, design, woodwork, bake, I just love making things!<br />
