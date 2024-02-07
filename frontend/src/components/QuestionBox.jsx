@@ -5,6 +5,7 @@ export const QuestionBox = ({ onSearch }) => {
   const [query, setQuery] = useState('');
 
   const handleSubmit = (event) => {
+    console.log("handleSubmit " + query)
     event.preventDefault();
     onSearch(query);
   };

@@ -8,8 +8,8 @@
 
 import {TopNav} from "./TopNav"
 import {BottomNav} from "./BottomNav"
-import Project from '../models/project'
-import {MiniCard} from './miniCard'
+//import Project from '../models/project'
+//import {MiniCard} from './miniCard'
 import {QuestionBox} from './QuestionBox';
 import React, { useState } from 'react';
 
@@ -18,6 +18,7 @@ export const HomePage = () => {
 
 
     const handleSearch = (query) => {
+
     fetch('/search', {
       method: 'POST',
       headers: {

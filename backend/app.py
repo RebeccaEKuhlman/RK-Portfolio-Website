@@ -15,6 +15,7 @@ def hello():
 
 @app.route('/search', methods=['POST'])
 def search():
+    print("in search")
     data = request.json
     query = data['query']
     completion = client.chat.completions.create(
