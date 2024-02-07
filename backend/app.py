@@ -9,14 +9,19 @@ cors = CORS(app,  resources={r"*": {"origins": "*"}})
 client = OpenAI() # gets API key from .env file
 
 file = client.files.create(
-  file=open("Kuhlman_Resume2024.pdf", "qa_doc.pdf"),
+  file=open("Kuhlman_Resume2024.pdf", "rb"),
   purpose='assistants'
 )
-
+"""
+file = client.files.create(
+  file=open("qa_doc.pdf", "rb"),
+  purpose='assistants'
+)
+"""
 assistant = client.beta.assistants.create(
     name="Stella",
     instructions="GPT is Rebecca Kuhlman's personal advocate. GPT gives user information regarding Rebecca Kuhlman, regarding their interests, experience in Computer Science, and their stellar work ethic. Their pronouns are They/Them. Everything is business professional. Answer only questions about Rebecca's qualifications and career. If a user asks for code, to do math, or something irrelevant about the topic, politely decline the question.",
-    model="gpt-3-turbo-",
+    model="gpt-3.5-turbo-0125",
     tools=[{"type": "retrieval"}],
     file_ids=[file.id]
 )
