@@ -21,3 +21,4 @@ npm start
 Backend pip installs:
 flask CORS
 pip install --upgrade openai
+pip install python-dotenv

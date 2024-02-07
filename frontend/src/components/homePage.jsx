@@ -42,15 +42,15 @@ export const HomePage = () => {
         <TopNav />
         <div className="m-3 p-10">
         <img src={require('../bqkLogo.png')} alt="it me" class="w-25 h-30 rounded"/>
-        <p>Hi my name is Rebecca Kuhlman and I'm a computer science student and jack-of-a-lot-of-trades!<br />
-I'm always working on 10 projects at a time ;-; but I do get them done!<br />
-I code, crochet, CAD, draw, design, woodwork, bake, I just love making things!<br />
-While I have a lot of stuff I want to do I do have a clear goal that I want to get too…<br />
-My dream job is to do AI for medical devices! (If I wasn't doing engineering, I'd probably want to be a neuroscientist) <br />
-Only the best of the best can do something that important and awesome… but I'm doing my best to prepare for the challenge!  Making something to save lives is worth the hardship it might take to get there!
-<br />Stay safe out there y'all!<br />
+        <p>My name is Rebecca Kuhlman, and I am currently pursuing a degree in Computer Science. I consider myself to be a multifaceted professional with a diverse set of skills.
 
-P.S. pardon the dust of this website ^-^ I'm experimenting with different styles and components from bootstrap and MUI!
+I am always engaged in a variety projects, always experimenting with different ideas and crafts.
+            My skill set spans coding, crocheting, writing, designing, woodworking, baking, and much more.
+            My passion lies in creation and innovation across a broad spectrum of disciplines.
+My aspiration is to specialize in artificial intelligence. In the last couple of years, it has become even more prevalent in our daily lives, furthering my determination to be in the field.
+The journey may be demanding, but the impact of creating the future is a worthy goal that drives my professional development.<br />Stay safe, and remember to clear your cookies<br />
+
+P.S. pardon the dust of this website - I'm experimenting with different styles and components from bootstrap and MUI, as well as gpt integration.
 </p>
     <div className="m-3 p-10">
       <QuestionBox onSearch={handleSearch} />
