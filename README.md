@@ -1,7 +1,9 @@
 An in-progress portfolio website
 
 Libraries needed:
-(npm installs for frontend)
+
+npm installs for frontend:
+
 react
 react-router-dom
 npm install --save react-collapse
@@ -15,3 +17,7 @@ See https://mui.com/material-ui/getting-started/installation/ for more details
 To start:
 cd frontend
 npm start
+
+Backend pip installs:
+flask CORS
+pip install --upgrade openai

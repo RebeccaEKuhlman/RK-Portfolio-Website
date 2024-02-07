@@ -10,11 +10,15 @@ import {TopNav} from "./TopNav"
 import {BottomNav} from "./BottomNav"
 import Project from '../models/project'
 import {MiniCard} from './miniCard'
-import {QuestionBox} from './QuestionBox'; // Make sure to import the SearchBar component
+import {QuestionBox} from './QuestionBox';
+import React, { useState } from 'react';
 
 export const HomePage = () => {
+    const [answer, setAnswer] = useState([]);
+
+
     const handleSearch = (query) => {
-    fetch('/search', { // Assuming your Flask route is '/search'
+    fetch('/search', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -23,7 +27,8 @@ export const HomePage = () => {
     })
     .then(response => response.json())
     .then(data => {
-      console.log(data); // Process your search results here
+      console.log(data); // logging as well for now
+      setAnswer(data.results);
     })
     .catch(error => {
       console.error('Error:', error);
@@ -50,6 +55,18 @@ P.S. pardon the dust of this website ^-^ I'm experimenting with different styles
     <div className="m-3 p-10">
       <QuestionBox onSearch={handleSearch} />
     </div>
+            <div>
+        {answer.length > 0 ? (
+          <div>
+            <h2>Search Results:</h2>
+            <ul>
+              {answer.map((result, index) => (
+                <li key={index}>{result}</li> // update later
+              ))}
+            </ul>
+          </div>
+        ) : null}
+      </div>
 
 <br />
 <br />
