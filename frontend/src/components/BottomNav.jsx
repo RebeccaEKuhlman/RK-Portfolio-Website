@@ -1,7 +1,7 @@
 /**
  * Uses MUI components to make a bar that sticks to the bottom of a user's screen
  * for easy navigation
- * Goals: maybe color styling (finishing touch)
+ * Goals: maybe color styling, consider reordering, matching front nav
  */
 
 import * as React from 'react';

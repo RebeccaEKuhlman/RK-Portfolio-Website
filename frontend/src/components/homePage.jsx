@@ -10,8 +10,26 @@ import {TopNav} from "./TopNav"
 import {BottomNav} from "./BottomNav"
 import Project from '../models/project'
 import {MiniCard} from './miniCard'
+import {QuestionBox} from './QuestionBox'; // Make sure to import the SearchBar component
 
-export const HomePage = () => { 
+export const HomePage = () => {
+    const handleSearch = (query) => {
+    fetch('/search', { // Assuming your Flask route is '/search'
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ query }),
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data); // Process your search results here
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  };
+
     return <div className="m-3 p-10">
         
         {/** button resume
@@ -27,8 +45,12 @@ My dream job is to do AI for medical devices! (If I wasn't doing engineering, I'
 Only the best of the best can do something that important and awesome… but I'm doing my best to prepare for the challenge!  Making something to save lives is worth the hardship it might take to get there!
 <br />Stay safe out there y'all!<br />
 
-P.S. pardon the dust of this website ^-^ I'm experimenting with different styles and components from bootstrap and MUI! And I need to eventually learn how databases work so a lot is placeholders :P
+P.S. pardon the dust of this website ^-^ I'm experimenting with different styles and components from bootstrap and MUI!
 </p>
+    <div className="m-3 p-10">
+      <QuestionBox onSearch={handleSearch} />
+    </div>
+
 <br />
 <br />
 <br />

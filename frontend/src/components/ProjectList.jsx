@@ -9,7 +9,8 @@ import { useState, useContext} from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import {TopNav} from "./TopNav"
 import {BottomNav} from "./BottomNav"
-import useCollapse from 'react-collapsed';
+//import useCollapse from 'react-collapsed';
+import { useCollapse } from 'react-collapsed'
 
 export const ProjectList = () => { 
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();

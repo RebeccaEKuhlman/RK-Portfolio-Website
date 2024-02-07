@@ -3,8 +3,10 @@ An in-progress portfolio website
 Libraries needed:
 (npm installs for frontend)
 react
-bootstrap
 react-router-dom
+npm install --save react-collapse
+npm i react-collapsed
+bootstrap
 MUI -
 npm install @mui/material @emotion/react @emotion/styled
 npm install @mui/icons-material
