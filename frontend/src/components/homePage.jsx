@@ -51,10 +51,10 @@ export const HomePage = () => {
         <TopNav />
         <div className="m-3 p-10">
         <img src={require('../bqkLogo.png')} alt="it me" class="w-25 h-30 rounded"/>
-        <p>My name is Rebecca Kuhlman, and I am currently pursuing a degree in Computer Science. I consider myself to be a multifaceted professional with a diverse set of skills.
+        <p>My name is Rebecca Kuhlman, and I am currently pursuing a degree in Computer Science and Data Science.
 
-I am always engaged in a variety projects, always experimenting with different ideas and crafts.
-            My skill set spans coding, crocheting, writing, designing, woodworking, baking, and much more.
+I am always engaged in a variety of projects, and am always experimenting with different ideas and crafts.
+            My skill set spans programming, crocheting, writing, designing, woodworking, machine maintenance, baking, and much more.
             My passion lies in creation and innovation across a broad spectrum of disciplines.
 My aspiration is to specialize in artificial intelligence. In the last couple of years, it has become even more prevalent in our daily lives, furthering my determination to be in the field.
 The journey may be demanding, but the impact of creating the future is a worthy goal that drives my professional development.<br />Stay safe, and remember to clear your cookies<br />

@@ -9,6 +9,7 @@ cors = CORS(app,  resources={r"*": {"origins": "*"}})
 client = OpenAI() # gets API key from .env file
 
 # later... generalize? like have an image folder that it creates a list from to create context.
+#additional_context = ""
 fileQA = open("qa_text.txt", "r")
 fileRes = open("res.txt", "r")
 additional_context = fileQA.read() + fileRes.read()

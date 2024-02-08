@@ -22,3 +22,4 @@ Backend pip installs:
 flask CORS
 pip install --upgrade openai
 pip install python-dotenv
+Currently, files used for context for app.py aren't available and some code will need to be commented out for the time being. 
