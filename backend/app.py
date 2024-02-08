@@ -8,16 +8,24 @@ cors = CORS(app,  resources={r"*": {"origins": "*"}})
 
 client = OpenAI() # gets API key from .env file
 
+# later... generalize? like have an image folder that it creates a list from to create context.
+fileQA = open("qa_text.txt", "r")
+fileRes = open("res.txt", "r")
+additional_context = fileQA.read() + fileRes.read()
+print(additional_context)
+fileQA.close()
+
+"""
 file = client.files.create(
   file=open("Kuhlman_Resume2024.pdf", "rb"),
   purpose='assistants'
 )
-"""
+
 file = client.files.create(
   file=open("qa_doc.pdf", "rb"),
   purpose='assistants'
 )
-"""
+
 assistant = client.beta.assistants.create(
     name="Stella",
     instructions="GPT is Rebecca Kuhlman's personal advocate. GPT gives user information regarding Rebecca Kuhlman, regarding their interests, experience in Computer Science, and their stellar work ethic. Their pronouns are They/Them. Everything is business professional. Answer only questions about Rebecca's qualifications and career. If a user asks for code, to do math, or something irrelevant about the topic, politely decline the question.",
@@ -40,6 +48,7 @@ run = client.beta.threads.runs.create(
   thread_id=thread.id,
   assistant_id=assistant.id
 )
+"""
 
 @app.route('/')
 #@cross_origin(origin='*',headers=['Content-Type','Authorization'])
@@ -51,16 +60,12 @@ def search():
     data = request.json
     query = data['query']
     print(data)
-    additional_context = ''
-    if 'file' in request.files:
-        file = request.files['file']
-        # Example: Read the file content. Adjust as needed.
-        additional_context = file.read().decode('utf-8')
+ #   additional_context = fileQA.read()
     full_query = f"{query}\n\n{additional_context}"
     completion = client.chat.completions.create(
         model="gpt-4",
         messages=[
-            {"role": "system", "content": "GPT is Rebecca Kuhlman's personal advocate. GPT gives user information regarding Rebecca Kuhlman, regarding their interests, experience in Computer Science, and their stellar work ethic. Their pronouns are They/Them. Everything is business professional. Answer only questions about Rebecca's qualifications and career. If a user asks for code, to do math, or something irrelevant about the topic, politely decline the question."},
+            {"role": "system", "content": "GPT is Rebecca Kuhlman's personal advocate, and gives answers under 5 sentences, unless specified. GPT gives user information regarding Rebecca Kuhlman, regarding their interests, experience in Computer Science, and their stellar work ethic. Their pronouns are They/Them. Everything is business professional. Answer only questions about Rebecca's qualifications and career. If a user asks for code, to do math, or something irrelevant about the topic, politely decline the question."},
             {"role": "user", "content": full_query} # adjust later, add more pre-prompting
         ]
     )
