@@ -14,6 +14,22 @@ export const Blog = () =>{
             //create component to store list items
         }
     <TopNav />
+        <div className="card w-75 bg-light p-2 m-3">
+            <div className="card-body">
+                <h5 className="card-title">Face recognition at the air port</h5>
+                <h6 className="card-subtitle mb-2 text-muted">02/07/2024</h6>
+                <p className="card-text">
+                    The consumer electronic show 2024 showed off many AI products, for better or for worse.
+                    Live translation technolgy is getting much better, and it's exciting to think about people being able to communicate better, and with more people.
+                    CES also featured the TSA working on facial recognition technology to verify identity at airports.
+                    Facial recognition is known to be very biased, and often unusable for some people based on their skin color.
+                    The CPP1 app is an example of this, with asylum seekers unable to get appointments due to the facial recognition not working for them.
+                    There are also privacy concerns with this technology as well... How is the data protected? When will it be deleted?
+                    Ideally, people will be able to opt out of facial recognition regardless of circumstance. We will see if this remains the case at US airports.
+                    As always, proceed with caution until proven otherwise.
+                </p>
+            </div>
+        </div>
     <div class="card w-75 bg-light p-2 m-3">
       <div class="card-body">
         <h5 class="card-title">Astro and AI's weaknesses</h5>
