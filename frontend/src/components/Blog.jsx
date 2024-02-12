@@ -14,6 +14,22 @@ export const Blog = () =>{
             //create component to store list items
         }
     <TopNav />
+    <div className="card w-75 bg-light p-2 m-3">
+            <div className="card-body">
+                <h5 className="card-title">Buzzwords</h5>
+                <h6 className="card-subtitle mb-2 text-muted">02/12/2024</h6>
+                <p className="card-text">
+                    Buzzwords have taken over media - flashy words that are throun around to make something "cool" and "modern".
+                    AI and ML are such buzzwords, as well as analyics, among others. The problem with buzzwords is that the actual 
+                    meaning behind them is obfuscatated. The actual word's meaning is irrelvent in the buzzword use.
+                    "AI can do anything and destroy the world" vs. "AI is a tool that can be used for good, netural, and bad things".
+                    Many people talk about AI, but how it works is often brushed under the rug. "It uses AI!" How does it use AI?
+                    What data is it using? What is the use case?
+                    The solution to buzzwords on an indivual level is to notice how media and advistising promotes things, and find and dictionary if necessary. 
+                    Unfortunalty, the future will likely spawn more as today's buzzwords lose their luster.
+                </p>
+            </div>
+        </div>
         <div className="card w-75 bg-light p-2 m-3">
             <div className="card-body">
                 <h5 className="card-title">Face recognition at the air port</h5>

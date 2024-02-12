@@ -50,7 +50,11 @@ export const HomePage = () => {
         */}
         <TopNav />
         <div className="m-3 p-10">
-        <img src={require('../bqkLogo.png')} alt="it me" class="w-25 h-30 rounded"/>
+        <div className="row">
+        <div className="col-sm-6">
+            <img src={require('../bqkLogo.png')} alt="it me" class="w-25 h-30 rounded img-fluid"/>
+          </div>
+        <div className="col-sm-6">
         <p>My name is Rebecca Kuhlman, and I am currently pursuing a degree in Computer Science and Data Science.
 
 I am always engaged in a variety of projects, and am always experimenting with different ideas and crafts.
@@ -61,6 +65,8 @@ The journey may be demanding, but the impact of creating the future is a worthy 
 
 P.S. pardon the dust of this website - I'm experimenting with different styles and components from bootstrap and MUI, as well as gpt integration.
 </p>
+          </div>
+          </div>
     <div className="m-3 p-10">
         <form onSubmit={handleSearch}>
       <input
