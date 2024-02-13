@@ -16,6 +16,27 @@ export const Blog = () =>{
     <TopNav />
     <div className="card w-75 bg-light p-2 m-3">
             <div className="card-body">
+                <h5 className="card-title">Deep Work</h5>
+                <h6 className="card-subtitle mb-2 text-muted">02/13/2024</h6>
+                <p className="card-text">
+                    Deep Work is a method of getting work done efficently using techquies propsed by Cal Newport. 
+                    The goal is to obtain an extreme level of focus to get work done quickly, without interruption.
+                    I've tried this method to varying sucess. The most that I get out of it is the timing aspect of it.
+                    If I feel like I want a break from a task, and I see I have about 5 minutes left until break time, 
+                    I'll work on the task a little more. However, as a student, it's not the most realistic to do. 
+                    Often I'll have shorter breaks in between meetings, classes, etc., and not enough time to do a true deep work session.
+                    I'd have to book a study room, get set up there, and only have 30 mintutes or so to work. 
+                    In the evenings, I have to focus on house work, making food, let alone time to rest. Another aspect of deep work 
+                    is to not work after 5 pm, which I do agree with, but it limits my options on true deep work. I'd love to try it 
+                    when I graduate, as the method works very well for my writing in my free time. Others have complaints about the 
+                    Deep Work book itself, usually on its "quit social media" aspect. While not realistic for everyone, there is
+                    a point to be made on how much time is spent on social media and the drawbacks on overall quality of life with it.
+                    Deep work is an interesting concepts, but not too far off from a lot of methods of focusing on work. At least it assures us that's its okay to not check our emails every 15 minutes.
+                </p>
+            </div>
+        </div>
+    <div className="card w-75 bg-light p-2 m-3">
+            <div className="card-body">
                 <h5 className="card-title">Buzzwords</h5>
                 <h6 className="card-subtitle mb-2 text-muted">02/12/2024</h6>
                 <p className="card-text">

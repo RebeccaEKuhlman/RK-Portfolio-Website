@@ -9,6 +9,7 @@
 import {TopNav} from "./TopNav"
 import {BottomNav} from "./BottomNav"
 import React, { useState } from 'react';
+import '../styling.css';
 
 export const HomePage = () => {
     const [answer, setAnswer] = useState(''); // message history needs array
@@ -51,17 +52,17 @@ export const HomePage = () => {
         <TopNav />
         <div className="m-3 p-10">
         <div className="row">
-        <div className="col-sm-6">
-            <img src={require('../bqkLogo.png')} alt="it me" class="w-25 h-30 rounded img-fluid"/>
+        <div className="col-sm-4">
+            <img src={require('../bqkLogo.png')} alt="A logo for BQ Kuhli, the pen name of Rebecca. Digitally drawn by Rebecca." class="w-60 h-60 rounded img-fluid"/>
           </div>
         <div className="col-sm-6">
         <p>My name is Rebecca Kuhlman, and I am currently pursuing a degree in Computer Science and Data Science.
-
 I am always engaged in a variety of projects, and am always experimenting with different ideas and crafts.
-            My skill set spans programming, crocheting, writing, designing, woodworking, machine maintenance, baking, and much more.
+            My skill set spans programming, crocheting, writing and poetry, designing, woodworking, machine maintenance, baking, and much more.
             My passion lies in creation and innovation across a broad spectrum of disciplines.
 My aspiration is to specialize in artificial intelligence. In the last couple of years, it has become even more prevalent in our daily lives, furthering my determination to be in the field.
-The journey may be demanding, but the impact of creating the future is a worthy goal that drives my professional development.<br />Stay safe, and remember to clear your cookies<br />
+The journey may be demanding, but the impact of creating the future is a worthy goal that drives my professional development.
+<br />Stay safe, and remember to clear your cookies.<br />
 
 P.S. pardon the dust of this website - I'm experimenting with different styles and components from bootstrap and MUI, as well as gpt integration.
 </p>
@@ -77,7 +78,7 @@ P.S. pardon the dust of this website - I'm experimenting with different styles a
         className="form-control"
       />
     <br />
-      <button type="submit" className="btn btn-primary">Search</button>
+    <button type="submit" className="btn btn-light-purple">Search</button>
     </form>
     </div>
             <div>
