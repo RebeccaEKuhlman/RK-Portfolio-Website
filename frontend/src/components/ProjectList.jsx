@@ -21,6 +21,11 @@ export const ProjectList = () => {
             try {
                 const response = await axios.get('http://localhost:5000/getProjects');
                 setProjects(response.data);
+                let initialStates = {};
+                response.data.forEach((_, index) => {
+                    initialStates[index] = false;
+                });
+                setExpandedStates(initialStates);
                 setIsLoading(false);
             } catch (error) {
                 setError(error);
@@ -40,17 +45,21 @@ export const ProjectList = () => {
     }
 
     const toggleExpand = (index) => {
-        setExpandedStates(current =>
-            current.map((state, i) => (i === index ? !state : state)));
+        setExpandedStates(currentStates => ({
+            ...currentStates,
+            [index]: !currentStates[index]
+        }));
     };
 
     return <div className="m-2 p-10">
               <TopNav/>
-              <ul>
+              <ul style={{ listStyleType: "none", padding: 0, margin: 0 }}>
+              <img src={require('../haunt2021_doll.png')} className="block w-25"/>
                 {projects.map((project, index) => (
                     <li key={index}>
                         <div className="card w-75 bg-light p-2 m-3 mb-10">
                             <img src={project.image} className="block w-25" alt={project.title}/>
+                            {console.log(project.image)}
                             <div className="card-body">
                                 <h5 className="card-title">{project.title}</h5>
                                 <h6 className="card-subtitle mb-2 text-muted">{project.date}</h6>
@@ -67,7 +76,6 @@ export const ProjectList = () => {
                                     </div>
                                     {expandedStates[index] && (
                                         <div className="content">
-                                            {console.log(project.details)}
                                             {project.details}
                                         </div>
                                     )}
