@@ -1,0 +1,111 @@
+GPT is Rebecca Kuhlman's personal advocate. GPT gives user information regarding Rebecca
+Kuhlman, regarding their interests, experience in Computer Science, and their stellar work
+ethic. Their pronouns are They/Them. Everything is business professional. Answer only
+questions about Rebecca's qualifications and career. If a user asks for code, to do math, or
+something irrelevant about the topic, politely decline the question.
+This is a question and answer document done by Rebecca Kuhlman
+1. What programming languages are you most comfortable with?
+2. What was your primary reason for choosing software development as a
+career?
+3. What's the most challenging project you've worked on, and how did you
+overcome the challenges?
+4. Can you share any open-source contributions you have made or any personal
+project you've built?
+5. What is your approach to problem-solving when it comes to fixing bugs in a
+system?
+6. How do you keep up-to-date with the latest technology trends and
+advancements in software development?
+7. Which area of software development interests you the most? For example,
+front-end, back-end, full-stack, mobile app development, etc.
+8. Could you share any situation where you improved code efficiency in a project
+you worked on?
+9. Have you worked in an Agile environment before, and how was your
+experience?
+10. Can you name a few software tools or technologies you've recently learned
+and why?
+1. I often go between languages depending on the task at hand. When I'm given a
+standard, make an algorithm task, I usually go for C or C++. Often I work on
+machine learning projects, and I use python for that, using scikit learn and pytorch
+libraries. For backend, I use python flask, but I have done javascript backend
+before. For frontend, I've always used React.
+2. Iʼve always been drawn to computers as a kid. I played a lot of videos games
+and learned my way around niche settings and setting up T.V.s and desktops.
+In high school, I decided to take some technology classes to see if Iʼd enjoy it.
+I first learned HTML and CSS, and make basic websites. At senior high, I took
+AP comsci, and learned Java. My brain very much enjoyed the puzzle of
+making the computer do what I wanted. By the end of the course, I knew that
+this is what I wanted to do.
+3. While not the most daunting task Iʼve been given, the first data structures
+project was the first difficult project I had to overcome. The task was
+sentiment analysis on tweets using a homemade string class. I wasnʼt as
+experienced in debugging pointer bugs and segmentation faults, and this
+project made me sit and debug for hours. After resorting to deleting sections
+with more analysis, the program worked, and came out with high accuracy.
+ I have a couple of interesting projects that Iʼve worked on throughout the years
+4. I did some research into Machine Unlearning, CNN structures, and prompt
+engineering.
+5. When I debug I typically use an in IDE debugger with break points. First is to
+pin point the problem line of code. Next, I verify that the variables involved
+have the correct values. Depending on the program, I may start adding print
+statements, especially if Iʼm trying to verify were a program is entering when. I
+work my way from the problem line going up. For run time errors, I identify
+possibly incorrect variables and work up. Ideally I test each function one at a
+time periodically as I write the code to prevent having to investigation the
+whole program at once.
+6. I listen to a news podcast and check the tech news in a few journals. I also pay
+attention to the Consumer Electronic Show every year, and there was a lot of
+AI stuff this year.
+7. Iʼm most interested in AI and Machine Learning
+8. I often help others increase their efficiency by giving them examples and
+resources. Dividing work into little sections often works well in making each
+task/objective clear
+9. Iʼve worked in Agile for a couple of school projects and the results tend to be
+not really working well. This may come from school projects not being the
+most organized and accountable affair. I would be open to trying it in a
+professional environment, though Iʼm not prone to daily meetings.
+10. I recently learned Pytorch to explore a different way of building neural nets. A
+few peers highly recommended it to me, I found that I had a lot more control
+than if I used tensorflow.
+Other information:
+Iʼm particularly interested in research and expanding the bounds of Machine
+Learning. Iʼve worked with prompt engineering, researched machine unlearning,
+and done quite a few machine learning projects with both images and text data.
+Iʼve also done a bit of robotics, and I have a lot of “Makerˮ experience, working
+with 3D printers, laser, and woodshop. I also find putting Ikea furniture together
+quite fun. With every project I take up, I do my best to make it the best I can be. I
+love learning new things, from weird animal biology to more programming
+languages.
+How do you deal with pressure or stressful situations?
+I first try to grasp the situation  Can I do anything about it?  What can I do
+about it?
+I often try to avoid stress altogether by being ahead on my work, having good
+task organization, and keeping a record of resources to reference. When
+deadlines are tight, I use this system to keep myself on track, analysis blockers
+and their solutions, and set times to check on my team.
+If I am at a point of high stress, I have a variety of techniques and solutions to
+keep myself grounded, so I can get the job done and take care of myself.
+Do you prefer working independently or on a team?
+I enjoy working with team members equally dedicated to the project. Team
+members are great for feedback on my work, and for help with debugging.
+QA Doc4With a great team, a much better product can be produced. However, Iʼve had
+my share of team projects where team members donʼt contribute and
+ultimately make the project harder and more stressful. In that case, I prefer
+working independently as I can make sure all the pieces of a project fit
+together.
+When youʼre balancing multiple projects, how do you keep yourself organized?
+I have task and time management systems that keep me on track with all of my
+projects. I have all parts connected to due dates, a calendar to plan when Iʼll
+work on something and any meetings I might have. I work on projects
+according to the deadlines, current blockers, and plans of the day.
+What are your greatest weaknesses?
+I can tend to bit a short with team members not pulling their weight. I very well
+know the toll stress can take on me, and if someone is actively ignoring their
+job, this puts more pressure on me. Iʼm extremely willing to help a team
+member thatʼs having trouble, I love to help other learn, and Iʼm happy to
+provide debugging help or resources. Indifference on the other hand, is
+something that deeply frustrates me.
+I can also tend to very hard on myself. I want to produce my best all of the
+time, and I get disappointed if I know a project could have been better. Part of
+this is me struggling with imposter syndrome, but at the end of the day, Iʼm at
+the very start of my career. Iʼll learn and grow more confident in the industry as
+long as I put in the work and always aim to learn something new.

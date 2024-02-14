@@ -73,17 +73,16 @@ def search():
     )
    # result = {'message': f'Search results for "{query}"'}
     result = completion.choices[0].message
-    print(result)
-    print(result.content)
+   # print(result)
+    #print(result.content)
     return jsonify(result.content)
   
 @app.route('/getProjects', methods=['GET'])
 def get_projects():
-    print("Hello")
     try:
         with open('projects.json', 'r') as file:
-            print("hi")
             projects = json.load(file)
+            print(projects)
             return jsonify(projects)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
