@@ -4,14 +4,18 @@
  *  - Find a way to display skills that isn't "too much" (maybe a long line with tiny text thats for decoration? )
  *  - carousel with best projects
  *  - mini project cards, links to big project page
+ *  - Message history for GPT intergration
  */
 
+import Button from '@mui/material/Button';
 import {TopNav} from "./TopNav"
 import {BottomNav} from "./BottomNav"
 import React, { useState } from 'react';
+import '../styling.css';
+import {Resume} from "./Resume";
 
 export const HomePage = () => {
-    const [answer, setAnswer] = useState(''); // message history needs array
+    const [answer, setAnswer] = useState(''); // message history needs array 
     const [query, setQuery] = useState('');
 
 
@@ -29,12 +33,11 @@ export const HomePage = () => {
     .then(response => response.json())
     .then(data => {
       console.log(data); // logging as well for now
-      if (data) { // Adjust according to the actual structure
+      if (data) {
         setAnswer(data);
       } else {
-        // Handle cases where data is not in the expected format or results are missing
         console.error('Unexpected response structure:', data);
-        setAnswer([]); // Set a default state or handle accordingly
+        setAnswer([]);
       }
       console.log(answer)
       setQuery("");
@@ -44,23 +47,29 @@ export const HomePage = () => {
     });
   };
 
-    return <div className="m-3 p-10">
+    return <div className="m-2 p-10">
         
         {/** button resume
         */}
         <TopNav />
         <div className="m-3 p-10">
-        <img src={require('../bqkLogo.png')} alt="it me" class="w-25 h-30 rounded"/>
+        <div className="row">
+        <div className="col-sm-4">
+            <img src={require('../bqkLogo.png')} alt="A logo for BQ Kuhli, the pen name of Rebecca. Digitally drawn by Rebecca." class="w-60 h-60 rounded img-fluid"/>
+          </div>
+        <div className="col-sm-6">
         <p>My name is Rebecca Kuhlman, and I am currently pursuing a degree in Computer Science and Data Science.
-
 I am always engaged in a variety of projects, and am always experimenting with different ideas and crafts.
-            My skill set spans programming, crocheting, writing, designing, woodworking, machine maintenance, baking, and much more.
+            My skill set spans programming, crocheting, writing and poetry, designing, woodworking, machine maintenance, baking, and much more.
             My passion lies in creation and innovation across a broad spectrum of disciplines.
-My aspiration is to specialize in artificial intelligence. In the last couple of years, it has become even more prevalent in our daily lives, furthering my determination to be in the field.
-The journey may be demanding, but the impact of creating the future is a worthy goal that drives my professional development.<br />Stay safe, and remember to clear your cookies<br />
+I'm specializing in artificial intelligence to explore how computers can help make a better and more sustainble future for us all. In the last couple of years, it has become even more prevalent in our daily lives, furthering my determination to be in the field.
+The journey may be demanding, but the impact of creating the future is a worthy goal that drives my professional development.
+<br />Stay safe, and remember to clear your cookies.<br />
 
 P.S. pardon the dust of this website - I'm experimenting with different styles and components from bootstrap and MUI, as well as gpt integration.
 </p>
+          </div>
+          </div>
     <div className="m-3 p-10">
         <form onSubmit={handleSearch}>
       <input
@@ -71,7 +80,9 @@ P.S. pardon the dust of this website - I'm experimenting with different styles a
         className="form-control"
       />
     <br />
-      <button type="submit" className="btn btn-primary">Search</button>
+
+    <Button type="submit"  className="btn" variant="contained">Search</Button>
+
     </form>
     </div>
             <div>
