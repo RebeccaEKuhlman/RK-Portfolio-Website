@@ -6,11 +6,51 @@
  *  - mini project cards, links to big project page
  */
 
+import { ThemeProvider, createTheme, createColor} from "@mui/material/styles";
+import Button from '@mui/material/Button';
 import {TopNav} from "./TopNav"
 import {BottomNav} from "./BottomNav"
 import React, { useState } from 'react';
 import '../styling.css';
+import { purple } from '@mui/material/colors';
 
+//const redColor = red[500];
+
+
+/*const { palette } = createTheme();
+const { augmentColor } = palette;
+const createColor = (mainColor) => augmentColor({ color: { main: mainColor } });
+const theme = createTheme({
+  palette: {
+    violet: createColor('#b19cd9'),
+  },
+});
+const primary = {
+  main: '#b19cd9',
+  light: '#42a5f5',
+  dark: '#1565c0',
+  contrastText: '#fff',
+};*/
+
+const theme = createTheme({
+  palette: {
+    primary:{
+      main: '#b19cd9',
+      light: '#c6b2eb',
+      dark: '#967bb6',
+      contrastText: '#fff',
+    },
+    secondary: {
+      light: '#b1eda4',
+      main: '#a0eb8f',
+      dark: '#527a49',
+      contrastText: '#000',
+    },
+  },
+});
+
+
+//<button type="submit" className="btn btn-light-purple">Search</button>
 export const HomePage = () => {
     const [answer, setAnswer] = useState(''); // message history needs array
     const [query, setQuery] = useState('');
@@ -30,12 +70,11 @@ export const HomePage = () => {
     .then(response => response.json())
     .then(data => {
       console.log(data); // logging as well for now
-      if (data) { // Adjust according to the actual structure
+      if (data) {
         setAnswer(data);
       } else {
-        // Handle cases where data is not in the expected format or results are missing
         console.error('Unexpected response structure:', data);
-        setAnswer([]); // Set a default state or handle accordingly
+        setAnswer([]);
       }
       console.log(answer)
       setQuery("");
@@ -78,7 +117,9 @@ P.S. pardon the dust of this website - I'm experimenting with different styles a
         className="form-control"
       />
     <br />
-    <button type="submit" className="btn btn-light-purple">Search</button>
+    <ThemeProvider theme={theme}>
+    <Button type="submit"  className="btn" variant="contained">Search</Button>
+    </ThemeProvider>
     </form>
     </div>
             <div>
