@@ -14,25 +14,25 @@ export const Blog = () =>{
             //create component to store list items
         }
     <TopNav />
-    <div className="card w-75 bg-light p-2 m-3">
+    <div className="card w-75 bg-light p-2 m-2">
             <div className="card-body">
                 <h5 className="card-title">Deep Work</h5>
                 <h6 className="card-subtitle mb-2 text-muted">02/13/2024</h6>
                 <p className="card-text">
-                    Deep Work is a method of getting work done efficently using techquies propsed by Cal Newport. 
+                Deep Work is a method of getting work done efficiently using techniques proposed by Cal Newport. 
                     The goal is to obtain an extreme level of focus to get work done quickly, without interruption.
-                    I've tried this method to varying sucess. The most that I get out of it is the timing aspect of it.
+                    I've tried this method to varying success. The most that I get out of it is the timing aspect of it.
                     If I feel like I want a break from a task, and I see I have about 5 minutes left until break time, 
-                    I'll work on the task a little more. However, as a student, it's not the most realistic to do. 
-                    Often I'll have shorter breaks in between meetings, classes, etc., and not enough time to do a true deep work session.
-                    I'd have to book a study room, get set up there, and only have 30 mintutes or so to work. 
-                    In the evenings, I have to focus on house work, making food, let alone time to rest. Another aspect of deep work 
-                    is to not work after 5 pm, which I do agree with, but it limits my options on true deep work. I'd love to try it 
+                    I'll work on the task a little more. However, as a student, it's not the most realistic thing to do. 
+                    Often, I'll have shorter breaks in between meetings, classes, etc., and not enough time to do a true deep work session.
+                    I'd have to book a study room, get set up there, and only have 30 minutes or so to work. 
+                    In the evenings, I have to focus on housework, making food, let alone time to rest. Another aspect of deep work 
+                    is to not work after 5 pm, which I do agree with, but it limits my options on true deep work. I'd love to try it
                     when I graduate, as the method works very well for my writing in my free time. Others have complaints about the 
                     Deep Work book itself, usually on its "quit social media" aspect. While not realistic for everyone, there is
-                    a point to be made on how much time is spent on social media and the drawbacks on overall quality of life with it.
-                    Deep work is an interesting concepts, but not too far off from a lot of methods of focusing on work. At least it assures us that's its okay to not check our emails every 15 minutes.
-                </p>
+                    a point to be made on how much time is spent on social media and the drawbacks on overall quality of life (and work) with it.
+                    Deep work is an interesting concept, but not too far off from a lot of methods of focusing on work. At least it assures us that it’s okay to not check our emails every 15 minutes.
+</p>
             </div>
         </div>
     <div className="card w-75 bg-light p-2 m-3">
@@ -40,14 +40,14 @@ export const Blog = () =>{
                 <h5 className="card-title">Buzzwords</h5>
                 <h6 className="card-subtitle mb-2 text-muted">02/12/2024</h6>
                 <p className="card-text">
-                    Buzzwords have taken over media - flashy words that are throun around to make something "cool" and "modern".
-                    AI and ML are such buzzwords, as well as analyics, among others. The problem with buzzwords is that the actual 
-                    meaning behind them is obfuscatated. The actual word's meaning is irrelvent in the buzzword use.
-                    "AI can do anything and destroy the world" vs. "AI is a tool that can be used for good, netural, and bad things".
+                Buzzwords have taken over media - flashy words that are thrown around to make something "cool" and "modern".
+                    AI and ML are such buzzwords, as well as analytics, among others. The problem with buzzwords is that the actual 
+                    meaning behind them is obfuscated. The actual word's meaning is irrelevant in the buzzword use.
+                    "AI can do anything and destroy the world" vs. "AI is a tool that can be used for good, neutral, and bad things".
                     Many people talk about AI, but how it works is often brushed under the rug. "It uses AI!" How does it use AI?
                     What data is it using? What is the use case?
-                    The solution to buzzwords on an indivual level is to notice how media and advistising promotes things, and find and dictionary if necessary. 
-                    Unfortunalty, the future will likely spawn more as today's buzzwords lose their luster.
+                    The solution to buzzwords on an individual level is to notice how media and advertising promote things, and find and dictionary if necessary. 
+                    Unfortunately, the future will likely spawn more as today's buzzwords lose their luster.
                 </p>
             </div>
         </div>
@@ -56,14 +56,16 @@ export const Blog = () =>{
                 <h5 className="card-title">Face recognition at the air port</h5>
                 <h6 className="card-subtitle mb-2 text-muted">02/07/2024</h6>
                 <p className="card-text">
-                    The consumer electronic show 2024 showed off many AI products, for better or for worse.
-                    Live translation technolgy is getting much better, and it's exciting to think about people being able to communicate better, and with more people.
-                    CES also featured the TSA working on facial recognition technology to verify identity at airports.
+                The Consumer Electronics Showcase (CES) 2024 showed off many AI products, for better or for worse.
+                    Live translation technology is getting much better, and it's exciting to think about people being able to communicate better, and with more people.
+                    CES also featured the Transportation Security Administration (TSA) working on facial recognition technology to verify people’s identity at airports.
                     Facial recognition is known to be very biased, and often unusable for some people based on their skin color.
-                    The CPP1 app is an example of this, with asylum seekers unable to get appointments due to the facial recognition not working for them.
-                    There are also privacy concerns with this technology as well... How is the data protected? When will it be deleted?
+                    The CBP One app is an example of this, with some asylum seekers unable to get appointments for legal immigration due to facial recognition not working for them. It also doesn’t help that the app is notoriously poor in quality, which is frankly unacceptable for a vital government service.
+	To implement facial recognition on a large (and potentially involuntary) scale, there must be sufficient evidence to prove the particular model used will be as unbiased as possible. 
+                    There are also privacy concerns with this technology as well... How is the data protected? When will the data be deleted? Who will see the data?
                     Ideally, people will be able to opt out of facial recognition regardless of circumstance. We will see if this remains the case at US airports.
                     As always, proceed with caution until proven otherwise.
+
                 </p>
             </div>
         </div>

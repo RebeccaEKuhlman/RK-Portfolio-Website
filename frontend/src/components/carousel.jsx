@@ -2,6 +2,8 @@
  * Edited bootstrap carousel component
  * Goals: 
  *  -Generalize more, make carousel itself a component
+ * - get images from database
+ * - I don't like hard coding but here we are
  * 
  */
  import {TopNav} from "./TopNav"
@@ -9,7 +11,7 @@
 
 export const Carousel = () => { 
     
-    return <div >
+    return <div className="m-2 p-10">
         <TopNav />
 
 
