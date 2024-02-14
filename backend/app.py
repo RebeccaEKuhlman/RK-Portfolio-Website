@@ -1,6 +1,7 @@
 from flask import Flask, flash, request, redirect, url_for, jsonify
 from flask_cors import CORS, cross_origin
 from openai import OpenAI
+import json
 
 app = Flask(__name__)
 cors = CORS(app,  resources={r"*": {"origins": "*"}})
@@ -75,6 +76,17 @@ def search():
     print(result)
     print(result.content)
     return jsonify(result.content)
+  
+@app.route('/getProjects', methods=['GET'])
+def get_projects():
+    print("Hello")
+    try:
+        with open('projects.json', 'r') as file:
+            print("hi")
+            projects = json.load(file)
+            return jsonify(projects)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
     app.run(debug=True)

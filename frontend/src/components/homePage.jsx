@@ -12,6 +12,7 @@ import {TopNav} from "./TopNav"
 import {BottomNav} from "./BottomNav"
 import React, { useState } from 'react';
 import '../styling.css';
+import {Resume} from "./Resume";
 
 export const HomePage = () => {
     const [answer, setAnswer] = useState(''); // message history needs array 

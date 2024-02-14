@@ -1,21 +1,43 @@
 /**
- * This will be expanded post getting a database to host
- * For now, the base styling a couple projects will be displayed via hard code :<
  * Needs generalization
  */
 
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {TopNav} from "./TopNav"
 import {BottomNav} from "./BottomNav"
-import { useCollapse } from 'react-collapsed'
+import useCollapse from 'react-collapsed'
 import Button from '@mui/material/Button';
+import axios from 'axios';
 
 export const ProjectList = () => { 
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
-    //const [projects, setProjects] = useState(undefined);
-    /**
-     * Add search bar, bar to keep track of where the user is in the page with scroll links
-     */
+  const [projects, setProjects] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState(null);
+    useEffect(() => {
+        const fetchProjects = async () => {
+            try {
+                // Replace 'your_backend_endpoint' with your actual Flask backend endpoint
+                const response = await axios.get('http://localhost:5000/getProjects');
+                setProjects(response.data); // Assuming the response data is the array of projects
+                setIsLoading(false);
+            } catch (error) {
+                setError(error);
+                setIsLoading(false);
+            }
+        };
+
+        fetchProjects();
+    }, []);
+
+    if (isLoading) {
+        return <div className="m-2 p-10"> <TopNav/> Loading...</div>;
+    }
+
+    if (error) {
+        return <div className="m-2 p-10"><TopNav/> Error: {error.message}</div>;
+    }
+
     return <div className="m-2 p-10">
               <TopNav/>
                         {/**<Autocomplete

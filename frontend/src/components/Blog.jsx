@@ -8,13 +8,13 @@ import {BottomNav} from "./BottomNav"
 
 export const Blog = () =>{
 
-    return <div className="m-3">
+    return <div className="m-2">
         {
             //Add front stuff
             //create component to store list items
         }
     <TopNav />
-    <div className="card w-75 bg-light p-2 m-2">
+    <div className="card w-75 bg-light p-2 m-3">
             <div className="card-body">
                 <h5 className="card-title">Deep Work</h5>
                 <h6 className="card-subtitle mb-2 text-muted">02/13/2024</h6>
