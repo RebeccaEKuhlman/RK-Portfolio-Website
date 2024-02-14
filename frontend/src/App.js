@@ -1,9 +1,12 @@
 
 import {Router} from "./Router"
+import './styling.css';
+import {theme} from "./styleTheme.js"
+import { ThemeProvider} from "@mui/material/styles";
 
 function App() {
   
-  return <Router />
+  return <ThemeProvider theme={theme}><Router /></ThemeProvider>
   
 }
 
