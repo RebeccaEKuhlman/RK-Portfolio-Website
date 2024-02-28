@@ -61,7 +61,7 @@ def hello():
 def search():
     data = request.json
     query = data['query']
-    print(data)
+   # print(data)
  #   additional_context = fileQA.read()
     full_query = f"{query}\n\n{additional_context}"
     completion = client.chat.completions.create(
@@ -83,6 +83,15 @@ def get_projects():
         with open('projects.json', 'r') as file:
             projects = json.load(file)
             return jsonify(projects)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+      
+@app.route('/getImages', methods=['GET'])
+def get_images():
+    try:
+        with open('images.json', 'r') as file:
+            images = json.load(file)
+            return jsonify(images)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
