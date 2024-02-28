@@ -54,7 +54,7 @@ export const ProjectList = () => {
     return <div className="m-2 p-10">
               <TopNav/>
               <ul style={{ listStyleType: "none", padding: 0, margin: 0 }}>
-              <img src={require('../haunt2021_doll.png')} className="block w-25"/>
+              
                 {projects.map((project, index) => (
                     <li key={index}>
                         <div className="card w-75 bg-light p-2 m-3 mb-10">

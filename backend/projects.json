@@ -1,7 +1,21 @@
 [
     {
+        "title": "Teaching Crocheting",
+        "image": "../crocheted_cat.png",
+        "date": "2021 - 2024",
+        "summary": "At the Deason Innovation Gym, I created a workshop to teach others to crochet. I organized a lesson plan, picked some beginner friendly patterns, and wrote up documentation for other staff members to lead the workshop as well. I teach the workshop once a semester and I've taught quite a few people a fun crafting skill.",
+        "details": "Crocheting has quite the learning curve. Hand position, different crochets, and loose vs tighten rows is essential to even a beginner. But eventually, it's like riding a bike. Crocheting can make tons of stuff - blankets, stuffed animals, sweaters, hats, socks, baskets, earrings, etc.. I love making cute stuffed animals for my younger family members, and their parents always know which gift is from me."
+    },
+    {
+        "title": "A Baking Journey",
+        "image": "../cookies_oven.png", 
+        "date": "2020 onword",
+        "summary": "During 2020, I honed my baking skills, making everything from pies to yule log cake. Nowadays I'm testing recipes for my favorite one for each dish... I have my perfect chocolate chip cookie recipe, now I need to find everything else.",
+        "details": "While baking seems simple, there are many things to consider. Control of gluten formation is one thing. Gluten forms during the mixing process, when flour and water are combined. Because of this, it is often better to mix dry ingrients and moist ingrients seperately before combing everything together. Techinical skills are also needed, such as when whipping egg whites. While I often feel like I've bitten off more than I can chew in some baking projects, I've learned a lot while making good food."
+    },
+    {
         "title": "DIG Derby 2022",
-        "image": "../Derby2022_trophy.png", 
+        "image": "../derby2022_wildTrophy.png", 
         "date": "Spring 2022",
         "summary": "The DIG's Annual derby. I helped organized the event as a team member, and made a car myself. The idea was a fish bowl, the glass replaced with acrylic, and the sand replaced with saw dust. I filled the car with sea creatures and 3D printed benchy boats, and painted it. While I definitely sacrificed function over form, my car crossed the finish line in reasonable time, and I was quite proud of how it turned out. I won the DIG Derpy's Most Wild Car award for my efforts.",
         "details": "I first made the base car, laser cutting the wheels, and getting a good block of wood for the body. I experimented with some wood carving with a Dremel, and while an interesting exercise, it didn't go into the final car. Once I decided on the theme of my car, I went to work on laser cutting the acrylic for the bowl. I knew I wasn't going to get a true round fishbowl, and instead focused on making sure that it would be easily attachable to the body. After securing the acrylic, I went into the details. I collected sawdust from my woodshop projects, got some leftover benchies*, and some paint. A lot of glue later, the car was completed. *The Benchy boat is a common 3D print for testing that a 3D printer works. It's often done after a machine is fixed to confirm it's operating properly. Given that the DIG has quite a few 3D printers, we have a lot of benchies lying around."

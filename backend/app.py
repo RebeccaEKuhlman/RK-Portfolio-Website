@@ -82,7 +82,6 @@ def get_projects():
     try:
         with open('projects.json', 'r') as file:
             projects = json.load(file)
-            print(projects)
             return jsonify(projects)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
