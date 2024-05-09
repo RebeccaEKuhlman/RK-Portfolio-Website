@@ -8,13 +8,14 @@
  */
  import {TopNav} from "./TopNav"
  import {BottomNav} from "./BottomNav"
+ import {Gallery} from "./Gallery"
 
 export const Carousel = () => { 
     
     return <div className="m-2 p-10">
         <TopNav />
 
-
+  <Gallery />
 
 
   <div id="carouselMain" class="carousel slide bg-grey" data-bs-ride="carousel">

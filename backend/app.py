@@ -14,7 +14,7 @@ client = OpenAI() # gets API key from .env file
 fileQA = open("qa_text.txt", "r")
 fileRes = open("res.txt", "r")
 additional_context = fileQA.read() + fileRes.read()
-print(additional_context)
+#print(additional_context)
 fileQA.close()
 
 """

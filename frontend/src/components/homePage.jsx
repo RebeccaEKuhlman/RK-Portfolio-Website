@@ -84,10 +84,11 @@ P.S. pardon the dust of this website - I'm experimenting with different styles a
     <Button type="submit"  className="btn" variant="contained">Search</Button>
 
     </form>
+    {/** need a loading indicator */}
     </div>
             <div>
         {answer.length > 0 ? (
-          <div>
+          <div className="card-title pl-5 mb-4">
             <h3>Assistant:</h3>
               <p>{answer}</p>
           </div>
