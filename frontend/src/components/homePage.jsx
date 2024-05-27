@@ -58,15 +58,13 @@ export const HomePage = () => {
             <img src={require('../bqkLogo.png')} alt="A logo for BQ Kuhli, the pen name of Rebecca. Digitally drawn by Rebecca." class="w-60 h-60 rounded img-fluid"/>
           </div>
         <div className="col-sm-6">
-        <p>My name is Rebecca Kuhlman, and I am currently pursuing a degree in Computer Science and Data Science.
+        <p>My name is Rebecca Kuhlman, and I am recent SMU graduate in Computer Science and Data Science.
 I am always engaged in a variety of projects, and am always experimenting with different ideas and crafts.
             My skill set spans programming, crocheting, writing and poetry, designing, woodworking, machine maintenance, baking, and much more.
             My passion lies in creation and innovation across a broad spectrum of disciplines.
-I'm specializing in artificial intelligence to explore how computers can help make a better and more sustainble future for us all. In the last couple of years, it has become even more prevalent in our daily lives, furthering my determination to be in the field.
+I've specialized in artificial intelligence to explore how computers can help make a better and more sustainble future for us all. In the last couple of years, it has become even more prevalent in our daily lives, furthering my determination to be in the field.
 The journey may be demanding, but the impact of creating the future is a worthy goal that drives my professional development.
 <br />Stay safe, and remember to clear your cookies.<br />
-
-P.S. pardon the dust of this website - I'm experimenting with different styles and components from bootstrap and MUI, as well as gpt integration.
 </p>
           </div>
           </div>
