@@ -84,7 +84,8 @@ def get_projects():
             projects = json.load(file)
             return jsonify(projects)
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        errorMessage = {"error": str(e)}
+        return jsonify(errorMessage), 500
       
 @app.route('/getImages', methods=['GET'])
 def get_images():
@@ -93,7 +94,8 @@ def get_images():
             images = json.load(file)
             return jsonify(images)
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        errorMessage = {"error": str(e)}
+        return jsonify(errorMessage), 500
 
 if __name__ == '__main__':
     app.run(debug=False)
